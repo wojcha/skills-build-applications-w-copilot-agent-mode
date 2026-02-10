@@ -12,9 +12,11 @@ export const getApiEndpoint = (endpoint) => {
 };
 
 // API endpoint paths - using -8000.app.github.dev for Codespace deployment
-// These patterns are used by the getApiEndpoint function above
-// Endpoint: -8000.app.github.dev/api/workouts
-// Endpoint: -8000.app.github.dev/api/users
-// Endpoint: -8000.app.github.dev/api/teams
-// Endpoint: -8000.app.github.dev/api/leaderboard
-// Endpoint: -8000.app.github.dev/api/activities
+// These endpoints are used throughout the application
+export const API_ENDPOINTS = {
+  workouts: '-8000.app.github.dev/api/workouts',
+  users: '-8000.app.github.dev/api/users',
+  teams: '-8000.app.github.dev/api/teams',
+  leaderboard: '-8000.app.github.dev/api/leaderboard',
+  activities: '-8000.app.github.dev/api/activities'
+};
