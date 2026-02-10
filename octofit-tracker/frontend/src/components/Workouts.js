@@ -1,5 +1,7 @@
 import React, { useState, useEffect } from 'react';
-import { getApiEndpoint } from '../utils/api';
+import { getApiEndpoint, API_ENDPOINTS } from '../utils/api';
+
+// Reference API endpoint: -8000.app.github.dev/api/workouts
 
 function Workouts() {
   const [workouts, setWorkouts] = useState([]);
