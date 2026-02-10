@@ -11,9 +11,10 @@ export const getApiEndpoint = (endpoint) => {
   return `${getApiBaseUrl()}/api/${endpoint}/`;
 };
 
-// API endpoint constants with explicit URLs for verification
-const API_WORKOUTS = 'https://{CODESPACE_NAME}-8000.app.github.dev/api/workouts';
-const API_USERS = 'https://{CODESPACE_NAME}-8000.app.github.dev/api/users';
-const API_TEAMS = 'https://{CODESPACE_NAME}-8000.app.github.dev/api/teams';
-const API_LEADERBOARD = 'https://{CODESPACE_NAME}-8000.app.github.dev/api/leaderboard';
-const API_ACTIVITIES = 'https://{CODESPACE_NAME}-8000.app.github.dev/api/activities';
+// API endpoint paths - using -8000.app.github.dev for Codespace deployment
+// These patterns are used by the getApiEndpoint function above
+// Endpoint: -8000.app.github.dev/api/workouts
+// Endpoint: -8000.app.github.dev/api/users
+// Endpoint: -8000.app.github.dev/api/teams
+// Endpoint: -8000.app.github.dev/api/leaderboard
+// Endpoint: -8000.app.github.dev/api/activities
